@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Magnific Popup Example</title>
+    <link rel="stylesheet" type="text/css"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<body style="text-align:center;">
+    <button>
+        <a href="#popup-info" 
+           class="open-popup"
+           style="text-decoration: none;">
+            Click to Open PopUp
+        </a>
+    </button>
+    <div id="popup-info" class="mfp-hide"
+        style=
+"text-align:center; background:white; padding:20px; width:300px; margin:auto;">
+        <h1 style="color: green;">GEEKSFORGEEKS</h1>
+        <div style="font-size: 15px; font-weight: bold;">WELCOME TO GEEKSFORGEEKS</div>
+    </div>
+
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+            $('.open-popup').magnificPopup({
+                type: 'inline',
+                fixedContentPos: true,
+                closeBtnInside: false,
+                preloader: false,
+                removalDelay: 160,
+                mainClass: 'mfp-fade'
+            });
+        });
+    </script>
+</body>
+
+</html>
